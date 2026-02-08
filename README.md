@@ -1,18 +1,28 @@
-# HackMate v2.0
+<div align="center">
+  <img src="frontend/public/logo.png" width="120" height="120" alt="HackMate Logo">
+  <h1>HackMate v2.0</h1>
+  <p><b>Professional Penetration Testing Platform with AI Assistance</b></p>
 
-**Professional Penetration Testing Platform with AI Assistance**
+  [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+  [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+</div>
 
-A full-stack web application for managing penetration testing engagements following the PTES methodology, featuring an AI-powered assistant, integrated terminal, and automated report generation.
+---
+
+A full-stack web application designed for security professionals to manage penetration testing engagements following the **PTES methodology**. Features include an AI-powered assistant, integrated terminal, whitelisted security tools, and automated report generation.
 
 ## 🚀 Features
 
-- **Engagement Management** - Track and manage penetration testing projects
-- **PTES Methodology** - 8-phase structured approach with AI guidance
-- **Integrated Terminal** - Execute security tools safely with command whitelisting
-- **Findings Tracker** - Document vulnerabilities with severity ratings and evidence
-- **Automated Scans** - Run nmap, nikto, gobuster, nuclei scans
-- **AI Assistant** - Get intelligent guidance powered by Google Gemini
-- **Report Generation** - Generate professional executive and technical reports
+- 🎯 **Engagement Management** - Track and manage security projects from inception to completion.
+- 🛡️ **PTES Methodology** - Structured 8-phase workflow with interactive AI guidance.
+- 💻 **Integrated Terminal** - Execute security tools Safely with command whitelisting and persistence.
+- 🪲 **Findings Tracker** - Centralized database for documenting vulnerabilities with severity and evidence.
+- 🔍 **Automated Scans** - One-click integration with `nmap`, `nikto`, `gobuster`, and `nuclei`.
+- 🧠 **AI Assistant** - Intelligent guidance powered by **Google Gemini** for output analysis and strategy.
+- 📊 **Report Generation** - Export professional Executive and Technical reports in Markdown and JSON formats.
 
 ## 📋 Prerequisites
 
