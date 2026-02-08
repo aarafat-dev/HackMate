@@ -148,6 +148,9 @@ For more detailed information, check out the following guides:
 - **[Features List](docs/features.md)** - Detailed breakdown of platform capabilities.
 - **[API Guide](docs/api_guide.md)** - Documentation for REST endpoints and data schemas.
 
+> [!NOTE]
+> Detailed application screenshots can be found in the **[docs/HackMate-images](docs/HackMate-images)** directory.
+
 ## 🔧 API Endpoints
 
 | Method | Endpoint | Description |
