@@ -38,12 +38,35 @@ def get_db():
 
 def init_db():
     """
-    Initialize database tables.
+    Initialize database tables and seed default data.
     Called on application startup.
     """
     # Import all models to register them with Base
     from models import engagement, phase, finding, scan, terminal, chat, report
+    from models.engagement import Engagement, EngagementStatus
     
     # Create all tables
     Base.metadata.create_all(bind=engine)
     print("[DB] Database tables created successfully")
+    
+    # Ensure default engagement exists for Mentor Mode/Global Terminal
+    db = SessionLocal()
+    try:
+        default_engagement = db.query(Engagement).filter(Engagement.id == "default").first()
+        if not default_engagement:
+            print("[DB] Creating default engagement for Mentor Mode...")
+            new_engagement = Engagement(
+                id="default",
+                name="General Assistant",
+                target="Internal",
+                scope="General guidance and tool testing",
+                status=EngagementStatus.ACTIVE.value
+            )
+            db.add(new_engagement)
+            db.commit()
+            print("[DB] Default engagement created successfully")
+    except Exception as e:
+        print(f"[DB] Error seeding default data: {str(e)}")
+        db.rollback()
+    finally:
+        db.close()
