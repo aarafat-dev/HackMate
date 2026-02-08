@@ -1,0 +1,23 @@
+HACKMATE-DESIGN-DOC.md
+HACKMATE-PRD.md
+TECH-DOC.md
+
+# add the __pycache__ directory
+__pycache__/
+# Virtual Environments
+venv/
+.env
+
+# Node.js
+node_modules/
+.next/
+dist/
+build/
+.env.local
+
+# Databases
+*.db
+*.sqlite3
+
+# Logs
+*.log
